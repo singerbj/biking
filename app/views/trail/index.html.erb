@@ -1,0 +1,25 @@
+Trails Index
+
+<table>
+  <thead>
+    <td>
+      Trail
+    </td>
+    <td>
+      Condition
+    </td>
+  </thead>
+  <% @trail_hash.each do |k, v| %>
+    <tr>
+      <td>
+        <%= k.to_s %> 
+      </td>
+      <td>
+        <%= v[0].to_s %> 
+      </td>
+      <td>
+        <%= v[1].to_s %> 
+      </td>
+    <tr>
+  <% end %>
+</table>
