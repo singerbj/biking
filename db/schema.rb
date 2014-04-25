@@ -11,13 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140424174526) do
+ActiveRecord::Schema.define(version: 20140424193922) do
 
   create_table "trails", force: true do |t|
     t.string   "name"
     t.string   "condition"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "desc"
+    t.datetime "date"
   end
 
 end

@@ -8,17 +8,26 @@ Trails Index
     <td>
       Condition
     </td>
+    <td>
+      Description
+    </td>
+    <td>
+      Date Updated
+    </td>
   </thead>
-  <% @trail_hash.each do |k, v| %>
+  <% @trails.each do |t| %>
     <tr>
       <td>
-        <%= k.to_s %> 
+        <%= t.name %> 
+      </td>       
+      <td>
+        <%= t.condition %> 
       </td>
       <td>
-        <%= v[0].to_s %> 
+        <%= t.desc %>
       </td>
       <td>
-        <%= v[1].to_s %> 
+        <%= t.date %>
       </td>
     <tr>
   <% end %>
