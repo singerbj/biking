@@ -27,7 +27,7 @@ class Trail < ActiveRecord::Base
         date = (date_string + " " + time_string + " " + tod_string).to_datetime
         
         if t = Trail.where(:name => name)[0]
-          t.update_attributes!(:name => name, :condition => condition, :desc => desc, :date => date)
+          t.update_attributes!(:name => name, :condition => condition, :desc => desc, :date => date, :updated_at => Time.now)
         else
           t = Trail.new
           t.name = name
