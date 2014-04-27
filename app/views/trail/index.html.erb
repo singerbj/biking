@@ -1,34 +1,23 @@
-<div width="100%" align="center"><h1>Trails Index</h1></div>
+<h1 align="center">Trail Conditions</h1>
 
-<table width="100%">
-  <thead>
-    <td>
-      Trail
-    </td>
-    <td>
-      Condition
-    </td>
-    <td>
-      Description
-    </td>
-    <td>
-      Date Updated
-    </td>
-  </thead>
+<ul class="grid">
   <% @trails.each do |t| %>
-    <tr>
-      <td>
-        <%= t.name %> 
-      </td>       
-      <td>
-        <%= t.condition %> 
-      </td>
-      <td>
-        <%= t.desc %>
-      </td>
-      <td>
-        <%= t.date %>
-      </td>
-    <tr>
+  <li>
+      <div>
+          <h4><%= t.name %></h4>&nbsp;-&nbsp;
+          <span class="condition"><%= t.condition %></span>  
+          <hr> 
+          <p><%= t.desc %></p>
+          <p><%= t.date.strftime("Posted: %m/%d/%Y at %I:%M%p") %>
+
+      </div>
+    </li> 
   <% end %>
-</table>
+  <li>
+      <div>
+        <h4>Site Created by:</h4> <br> Ben Singer <br><br>
+        <h4>Data Scraped and Owned by:</h4> <br> http://www.morcmtb.org/ <br><br>
+        <h4>Database last updated at:</h4> <br> <%=@trails[0].updated_at.strftime("%m/%d/%Y at %I:%M%p") %>
+      </div>
+  </li> 
+</ul>

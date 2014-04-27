@@ -9,8 +9,82 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require foundation_and_overrides
-
  *= require_tree .
  */
+
+.grid {
+      overflow: hidden;
+      max-width: 76em;
+      padding: 20px ;
+      margin: 0 auto;
+}
+
+.grid li {
+  list-style-type: none;
+}
+
+
+.grid li > div {
+  background: #FFF;
+  padding: 10px;
+  margin: 3px;
+  height: 185px;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Roboto', 'sans-serif';
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+.grid li a {
+  color: #fff;
+}
+
+@media all and (min-width: 27em) {
+  .grid li {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media all and (min-width: 40em) {
+  .grid li {
+    width: 33.3333333%;
+  }
+  .grid li.wide {
+    width: 66.666666%;
+  }
+}
+
+@media all and (min-width: 60em) {
+  .grid li {
+    width: 25%;
+  }
+  .grid li.wide {
+    width: 50%;
+  }
+}
+
+.grid li > div > h1,h2,h3,h4,h5 {
+  font-family: 'Roboto', 'sans-serif';
+  display: inline;
+}
+
+.condition {
+  font-style: italic;
+}
+
+body {
+  background-size: 10px 10px;
+  background-image: -moz-linear-gradient(135deg, rgba(0, 0, 0, 0) 45%, #000 49%, #000 51%, rgba(0, 0, 0, 0) 55%);
+  background-image: -webkit-linear-gradient(135deg, rgba(0, 0, 0, 0) 45%, #000 49%, #000 51%, rgba(0, 0, 0, 0) 55%);
+  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0) 45%, #000 49%, #000 51%, rgba(0, 0, 0, 0) 55%);
+  font-family: 'Roboto', 'sans-serif';
+}
+
+h1 {
+  background: #FFF;
+  border: 1px solid #000;
+}
+
 
