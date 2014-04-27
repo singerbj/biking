@@ -15,9 +15,8 @@
   <% end %>
   <li>
       <div>
-        <h4>Site Created by:</h4> <br> Ben Singer <br><br>
-        <h4>Data Scraped and Owned by:</h4> <br> http://www.morcmtb.org/ <br><br>
-        <h4>Database last updated at:</h4> <br> <%=@trails[0].updated_at.strftime("%m/%d/%Y at %I:%M%p") %>
+        <h4>Site created by:</h4> <br> Ben Singer <br><br>
+        <h4>Data scraped from and owned by:</h4> <br> <%= link_to "MORCMTB", "http://www.morcmtb.org/" %> <br><br>
       </div>
   </li> 
 </ul>

@@ -32,12 +32,7 @@
   font-size: 14px;
   font-weight: 300;
   font-family: 'Roboto', 'sans-serif';
-  border: 1px solid #000;
   border-radius: 8px;
-}
-
-.grid li a {
-  color: #fff;
 }
 
 @media all and (min-width: 27em) {
@@ -84,7 +79,12 @@ body {
 
 h1 {
   background: #FFF;
-  border: 1px solid #000;
+  font-weight: 300;
 }
+
+a:link {color:#000;}   
+a:visited {color:#000;}
+a:hover {color:#333;}  
+a:active {color:#000;} 
 
 
