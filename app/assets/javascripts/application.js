@@ -10,5 +10,33 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require jquery_ujs
 //= require_tree .
 
+console.log("resizing box!")
+var highest = 0; 
+$('.box').each(function(){
+  var current = $(this).height() 
+  if (current > highest){
+    highest = current
+  }
+});
+
+$('.box').each(function(i){ $(this).css('height', highest); }) 
+
+
+$( window ).resize(
+  function resizeBox() {  
+    console.log("resizing box!")
+    var highest = 0; 
+    $('.box').each(function(){
+      var current = $(this).height() 
+      if (current > highest){
+        highest = current
+      }
+    });
+
+    $('.box').each(function(i){ $(this).css('height', highest); })
+  }   
+);

@@ -2,13 +2,13 @@ Biking::Application.routes.draw do
   
   root :to => "trail#index"
 
-  resources :trail do
-    member do
-    end
-
-    collection do
-    end
-  end
+ # resources :trail, only: [:index] do
+ #   member do
+ #   end
+ #
+ #   collection do
+ #   end
+ # end
 
 
   # The priority is based upon order of creation: first created -> highest priority.

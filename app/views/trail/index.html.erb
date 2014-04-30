@@ -3,7 +3,7 @@
 <ul class="grid">
   <% @trails.each do |t| %>
   <li>
-      <div>
+      <div class="box">
           <h4><%= t.name %></h4>&nbsp;-&nbsp;
           <span class="condition"><%= t.condition %></span>  
           <hr> 
@@ -14,7 +14,7 @@
     </li> 
   <% end %>
   <li>
-      <div>
+      <div class="box">
         <h4>Site created by:</h4> <br> Ben Singer <br><br>
         <h4>Data scraped from and owned by:</h4> <br> <%= link_to "MORCMTB", "http://www.morcmtb.org/" %> <br><br>
       </div>

@@ -9,3 +9,4 @@ gem 'whenever', :require => false
 gem 'sass-rails'
 gem 'coffee-rails'
 gem 'bootstrap-sass'
+gem 'jquery-rails'

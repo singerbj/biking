@@ -1,7 +1,7 @@
 class TrailController < ApplicationController
   
   def index         
-    @trails = Trail.all
+    @trails = Trail.order(:name)
   end
 
 end
