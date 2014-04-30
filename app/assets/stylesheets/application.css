@@ -15,7 +15,8 @@
 .grid {
       overflow: hidden;
       max-width: 76em;
-      padding: 20px ;
+      padding-left: 20px;
+      padding-right: 20px;
       margin: 0 auto;
 }
 
@@ -25,7 +26,7 @@
 
 
 .grid li > div {
-  background: #FFF;
+  background: rgba(255, 255, 255, 0.8);
   padding: 10px;
   margin: 3px;
   height: 185px;
@@ -33,6 +34,8 @@
   font-weight: 300;
   font-family: 'Roboto', 'sans-serif';
   border-radius: 8px;
+  box-shadow: 3px 3px 3px #777;
+  
 }
 
 @media all and (min-width: 27em) {
@@ -61,7 +64,6 @@
 }
 
 .grid li > div > h1,h2,h3,h4,h5 {
-  font-family: 'Roboto', 'sans-serif';
   display: inline;
 }
 
@@ -70,16 +72,26 @@
 }
 
 body {
-  background-size: 10px 10px;
-  background-image: -moz-linear-gradient(135deg, rgba(0, 0, 0, 0) 45%, #000 49%, #000 51%, rgba(0, 0, 0, 0) 55%);
-  background-image: -webkit-linear-gradient(135deg, rgba(0, 0, 0, 0) 45%, #000 49%, #000 51%, rgba(0, 0, 0, 0) 55%);
-  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0) 45%, #000 49%, #000 51%, rgba(0, 0, 0, 0) 55%);
+  background-image: url('bkrd.jpg');
+  background-repeat: no-repeat;
   font-family: 'Roboto', 'sans-serif';
+  margin: 0 auto;
 }
 
 h1 {
   background: #FFF;
   font-weight: 300;
+}
+
+#title{
+  width: 200px;
+  font-size: 24px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  margin: 10px auto;
+  padding: 5px;
+  box-shadow: 3px 3px 3px #777;
 }
 
 a:link {color:#000;}   
